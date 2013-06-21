@@ -1,0 +1,40 @@
+#!/system/bin/sh
+
+# rkbootlinux - 0.1
+#
+# Read the README file for instructions
+
+# Copyright: 2012 Alok Sinha <asinha@g8.net>
+#            2013 Jeremy Jongepier <jeremy@autostatic.com>
+#
+# Released under GPL V2
+
+# Setting up the variables
+LOCN="/mnt/sdcard/linux"
+LOG="/mnt/sdcard/linux.log"
+FILE="/mnt/sdcard/linux/usr/local/etc/rkbootlinux/bootlinux"
+# This is the most likely device, when you use an USB stick
+#DEVC="/dev/block/sda1"
+# This is the likely device when you use a SD card
+DEVC="/dev/block/mmcblk0p1"
+
+# Mounting the memory card
+umount $LOCN
+mkdir -p $LOCN 
+/system/bin/mount -t ext4 $DEVC $LOCN
+
+# Now checking if file exists
+if [ ! -f $FILE ]
+then 
+   # If does not exist, then log and do nothing
+   echo "-------------------------------------" >> $LOG
+   echo "$FILE does not exist, staying in Android" >> $LOG
+   echo "$FILE does not exist, staying in Android" 
+else
+   # If exist, then log and boot into Linux
+   echo "-------------------------------------" >> $LOG
+   date >> $LOG
+   echo "$FILE exists, booting into linux" 
+   echo "$FILE exists, booting into linux" >> $LOG
+   reboot recovery 
+fi
