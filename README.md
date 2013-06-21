@@ -1,9 +1,10 @@
 rkbootlinux 0.1
+===============
 
 Released under GPL V2  
 Disclaimer: Before you start the installation or even reading this document. Be aware and forewarned that reading this document and/or installing this package on your system will most definitely damage it beyond repair. Once damaged, you and only you are responsible and liable for all the good things, not so good things, the bad things and the very bad things that will happen to you. I am not responsible for any damage - install and secure your system the way a prudent man would.
 
-Copyright: 2012 Alok Sinha <asinha@g8.net>
+Copyright: 2012 Alok Sinha <asinha@g8.net>  
            2013 Jeremy Jongepier <jeremy@autostatic.com>
 
 This script gives you the flexibility to automatically load into Linux or Android, based on your choice.  
@@ -57,7 +58,7 @@ _Installation Instructions_
         or  
       - You can use the SManager (download from google play) Widget to create a widget of this script on your desktop
 
-    Installing bootandroid.sh  
+   Installing bootandroid.sh  
       - Target: Linux  
       - Once you have booted into Linux, just copy this file into /usr/local/bin/  
       - chmod 755 /usr/local/bin/bootandroid.sh  
