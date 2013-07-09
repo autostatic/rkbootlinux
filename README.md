@@ -14,9 +14,9 @@ From linux, when you need to come back to android, you need to run /usr/local/bi
 
 _Package Contents_  
 The package consists of three files  
-         40picuntu    - The main switch file, that checks on each boot - Android platform  
-         go-picuntu.sh - The script that prepares the android system for booting into Linux automatically from next time, AND boots into Linux - Android platform  
-         go-android.sh - This script prepares the Linux system into booting into Android from next boot onwards AND boots into Android. - Linux  
+         40bootlinux    - The main switch file, that checks on each boot - Android platform  
+         bootlinux.sh - The script that prepares the android system for booting into Linux automatically from next time, AND boots into Linux - Android platform  
+         bootandroid.sh - This script prepares the Linux system into booting into Android from next boot onwards AND boots into Android. - Linux  
          README  - This file
 
 
@@ -41,12 +41,12 @@ _Before Installation_
 
 
 _Installation Instructions_  
-   Installing '40picuntu'  
+   Installing '40bootlinux'  
       - Target: Android.  
       - Download ES File Explorer (ESFE) from Google play  
       - Configure it to mount the root system in WRITE mode.  
       - Launch the ESFE.  
-      - Copy '40picuntu' into /etc/init.d/  
+      - Copy '40bootlinux' into /etc/init.d/  
       - If the copy command does not succeed, then check the ESFE settings, you may not have set the root option properly
     
    Installing bootlinux.sh  
@@ -69,4 +69,5 @@ If you get stuck, yell... if we hear you, we will try to connect. :)
 
 
 Team Picuntu
+
 Jeremy
